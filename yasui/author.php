@@ -216,7 +216,8 @@ if(mb_strlen($post->post_title, 'UTF-8')>24){
           </div>
         </div>
       </section>
-    </article>
+		</article>
+		<?php include('tenp-excursion_bnr.php'); ?>
   </main>
 
 <!-- TENP -->

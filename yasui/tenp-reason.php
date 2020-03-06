@@ -41,10 +41,10 @@ Template Name: 選ばれる理由配下固定テンプレート
 		<?php include('nav_reason_pagehead.php'); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-<?php remove_filter('the_content', 'wpautop'); ?> 
+<?php remove_filter('the_content', 'wpautop'); ?>
 <?php the_content(); ?>
 <?php endwhile; // End the loop. Whew. ?>
-
+<?php include('tenp-excursion_bnr.php'); ?>
 			<?php include('nav_reason.php'); ?>
     </article>
   </main>

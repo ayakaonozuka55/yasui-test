@@ -251,6 +251,7 @@ if(mb_strlen($content->post_content, 'UTF-8')>40){
       </div>
     </article>
 		<!-- TENP -->
+		<?php include('tenp-excursion_bnr.php'); ?>
 		<?php include('nav_about.php'); ?>
   </main>
 

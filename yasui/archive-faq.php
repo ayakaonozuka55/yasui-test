@@ -26,13 +26,13 @@
               </div>
             </div>
             <div class="archive_body">
-<?php 
+<?php
 $results = $wpdb->get_results("
     SELECT A.name, A.slug /* post_titleとguidとIDの値を取り出す */
     FROM $wpdb->terms AS A
-	LEFT OUTER JOIN $wpdb->term_taxonomy AS B ON A.term_id = B.term_id 
-    WHERE  B.taxonomy = 'faq_category' 
-		AND B.count != '0' 
+	LEFT OUTER JOIN $wpdb->term_taxonomy AS B ON A.term_id = B.term_id
+    WHERE  B.taxonomy = 'faq_category'
+		AND B.count != '0'
     ORDER BY B.parent, A.term_order ASC
 ");
 ?>
@@ -53,7 +53,7 @@ foreach ($results as $value) :
 <?php
     $args= array(
 		'post_type' => 'faq',
-    'tax_query' => array( 
+    'tax_query' => array(
         array(
 						'taxonomy' => 'faq_category',
             'field' => 'slug',
@@ -92,7 +92,8 @@ foreach ($results as $value) :
 				<!-- TENP -->
 				<?php include('side_qanda.php'); ?>
       </div>
-    </article>
+		</article>
+		<?php include('tenp-excursion_bnr.php'); ?>
   </main>
 
 <!-- TENP -->

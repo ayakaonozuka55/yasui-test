@@ -59,7 +59,8 @@
         </section>
 				<!-- TENP -->
 				<?php include('nav_reason.php'); ?>
-      </article>
+			</article>
+			<?php include('tenp-excursion_bnr.php'); ?>
   </main>
 
 

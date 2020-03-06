@@ -147,9 +147,9 @@ if(mb_strlen($acfcontent, 'UTF-8')>30){
 <?php
 if(single_cat_title("", false) == 'リフォーム・リノベーション'){
 	include('cv_reform.php');
-}else{
- include('maincv.php');
-}
+	}else{
+	include('maincv.php');
+	}
 ?>
 <!-- <?php include('maincv.php'); ?> -->
 <?php include('latest_event.php'); ?>

@@ -261,7 +261,8 @@ if(mb_strlen($content->post_content, 'UTF-8')>40){
 				<!-- TENP -->
 				<?php include('side_staffblog.php'); ?>
       </div>
-    </article>
+		</article>
+		<?php include('tenp-excursion_bnr.php'); ?>
   </main>
 
 	<!-- TENP -->

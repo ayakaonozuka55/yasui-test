@@ -72,5 +72,6 @@
         築年数が経過した家や中古住宅のリノベーションから水まわりや設備の部分フォームまで
       </a>
     </div>
-  </article>
+	</article>
+	<?php include('tenp-excursion_bnr.php'); ?>
 </section>

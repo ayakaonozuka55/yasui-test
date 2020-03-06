@@ -202,6 +202,7 @@ if(mb_strlen($acfcontent, 'UTF-8')>29){
           </div>
           <!-- /.casevoiceBlock -->
         </div>
+				<?php include('tenp-excursion_bnr.php'); ?>
       </section>
     </article>
   </main>

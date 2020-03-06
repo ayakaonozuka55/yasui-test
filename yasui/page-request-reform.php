@@ -204,7 +204,7 @@
     </article>
   </main>
 <!-- TENP -->
-<?php include('maincv.php'); ?>
+<?php include('cv_reform.php'); ?>
 
 <!-- sub-container end -->
 <?php get_footer(); ?>

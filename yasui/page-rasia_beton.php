@@ -291,6 +291,7 @@ if(mb_strlen($acfcontent, 'UTF-8')>27){
       </section>
 <!-- TENP -->
 <?php include('making_lineup.php'); ?>
+
     </article>
   </main>
 

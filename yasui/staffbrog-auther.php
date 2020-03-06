@@ -124,7 +124,8 @@ if(mb_strlen($post->post_title, 'UTF-8')>70){
 				<!-- TENP -->
 				<?php include('side_staffblog.php'); ?>
       </div>
-    </article>
+		</article>
+		<?php include('tenp-excursion_bnr.php'); ?>
   </main>
 
 <!-- TENP -->

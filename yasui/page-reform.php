@@ -113,7 +113,8 @@
             </div>
           </article>
         </div>
-      </section>
+			</section>
+			<?php include('tenp-excursion_bnr.php'); ?>
       <section class="reform_cvbtn">
         <div class="l-content-sm reform_cvbtn_inner">
           <div class="btn-c btn-c-lg">
@@ -324,14 +325,13 @@ if(mb_strlen($acfcontent, 'UTF-8')>27){
         </div>
       </section>
 
-
       <?php include('nav_reform.php'); ?>
 
     </article>
   </main>
 
 <!-- TENP -->
-<!-- <?php include('maincv.php'); ?> -->
+
 <?php include('cv_reform.php'); ?>
 <?php include('latest_event_reform.php'); ?>
 <?php include('latest_column.php'); ?>

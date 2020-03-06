@@ -34,7 +34,7 @@
                 <div class="imgwrap">
                   <a href="<?php the_permalink() ?>" class="cf">
                     <div class="img img-scale">
-<?php 
+<?php
 $thumbnail_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'index_size' );
 if($thumbnail_image_url[0]){
 	echo '<img src="' . $thumbnail_image_url[0] . '" class="" style="">';
@@ -49,7 +49,7 @@ if($thumbnail_image_url[0]){
                   <div class="head cf">
                     <p class="day"><?php the_time('Y.m.d'); ?></p>
                     <ul class="category cf">
-<?php 
+<?php
 	$taxonomy_names = get_post_taxonomies();
 	$terms = get_the_terms($post->ID,$taxonomy_names[0]);
 	$cnt = 1;
@@ -95,6 +95,7 @@ if(mb_strlen($post->post_title, 'UTF-8')>100){
       </div>
     </article>
 		<!-- TENP -->
+		<?php include('tenp-excursion_bnr.php'); ?>
 		<?php include('nav_about.php'); ?>
   </main>
 

@@ -108,6 +108,7 @@ if(mb_strlen($acfcontent, 'UTF-8')>27){
 
       </div>
     </article>
+		<?php include('tenp-excursion_bnr.php'); ?>
   </main>
 
 <!-- TENP -->

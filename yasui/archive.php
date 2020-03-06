@@ -89,7 +89,8 @@ if(mb_strlen($post->post_title, 'UTF-8')>120){
 				<!-- TENP -->
 				<?php include('side_news.php'); ?>
       </div>
-    </article>
+		</article>
+		<?php include('tenp-excursion_bnr.php'); ?>
   </main>
 	<!-- TENP -->
 	<?php include('maincv.php'); ?>

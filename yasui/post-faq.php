@@ -71,7 +71,8 @@ $tax_id = $term_info->term_id;
 				<!-- TENP -->
 				<?php include('side_qanda.php'); ?>
       </div>
-    </article>
+		</article>
+		<?php include('tenp-excursion_bnr.php'); ?>
   </main>
 
 <!-- TENP -->

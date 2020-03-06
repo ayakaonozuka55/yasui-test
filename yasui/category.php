@@ -46,7 +46,7 @@ $cat_info = get_category( $cat );
                 <div class="head cf">
                   <p class="day"><?php the_time('Y.m.d'); ?></p>
                   <ul class="category cf">
-<?php 
+<?php
 	$p_terms = get_the_terms($post->ID,'category');
 	if($p_terms){
 	    foreach ($p_terms as $pcate) {
@@ -84,7 +84,8 @@ if(mb_strlen($post->post_title, 'UTF-8')>120){
 				<!-- TENP -->
 				<?php include('side_news.php'); ?>
       </div>
-    </article>
+		</article>
+		<?php include('tenp-excursion_bnr.php'); ?>
   </main>
 	<!-- TENP -->
 	<?php include('maincv.php'); ?>

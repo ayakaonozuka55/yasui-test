@@ -93,7 +93,8 @@ Template Name: STAFF 一覧表示用テンプレート
           <!-- /.staffBlock -->
         </div>
       </section>
-    </article>
+		</article>
+		<?php include('tenp-excursion_bnr.php'); ?>
   </main>
 
 <!-- TENP -->

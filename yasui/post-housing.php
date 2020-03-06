@@ -145,7 +145,8 @@ if(mb_strlen($acfcontent, 'UTF-8')>27){
 				<!-- TENP -->
 				<?php include('side_case.php'); ?>
       </div>
-    </article>
+		</article>
+		<?php include('tenp-excursion_bnr.php'); ?>
   </main>
 
 <!-- TENP -->

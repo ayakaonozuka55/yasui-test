@@ -93,7 +93,8 @@ $termlink = get_term_link($terms[0]->slug,$taxonomy_names[0]);
 				<!-- TENP -->
 				<?php include('side_qanda.php'); ?>
       </div>
-    </article>
+		</article>
+		<?php include('tenp-excursion_bnr.php'); ?>
   </main>
 
 	<!-- TENP -->

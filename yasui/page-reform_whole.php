@@ -288,7 +288,7 @@ if(mb_strlen($acfcontent, 'UTF-8')>27){
   </main>
 
 <!-- TENP -->
-<?php include('maincv.php'); ?>
+<?php include('cv_reform.php'); ?>
 <?php include('latest_event_reform.php'); ?>
 <?php include('latest_column.php'); ?>
 

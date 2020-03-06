@@ -23,7 +23,7 @@ Template Name: 会社案内配下固定テンプレート
 
 	<?php elseif(is_page(8683)): ?>
     <div class="main_head" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/about/thought/bg_head.jpg);">
-      <h1>社長の生い立ちと想い</h1>
+      <h1>社長の生い立ちと<br class="visible-sm visible-xs">「家づくりへの想い」</h1>
     </div>
 
 	<?php endif; ?>

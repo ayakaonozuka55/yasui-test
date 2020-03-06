@@ -782,11 +782,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="gnav_sub">
           <ul class="gnav_sub_unorderded">
             <li class="gnav_sub_item gnav_sub_item_top"><a href="<?php echo home_url(); ?>/about/"><span>会社案内トップ</span></a></li>
+            <li class="gnav_sub_item"><a href="<?php echo home_url(); ?>/about/thought"><span>社長の生い立ちと「家づくりへの想い」</span></a></li>
             <li class="gnav_sub_item"><a href="<?php echo home_url(); ?>/media"><span>受賞歴・メディア情報</span></a></li>
             <li class="gnav_sub_item"><a href="<?php echo home_url(); ?>/about/area"><span>対応エリア</span></a></li>
             <li class="gnav_sub_item"><a href="<?php echo home_url(); ?>/staff-auther-all"><span>スタッフ紹介</span></a></li>
 						<li class="gnav_sub_item"><a href="<?php echo home_url(); ?>/about/structure"><span>総合建設</span></a></li>
-            <li class="gnav_sub_item"><a href="<?php echo home_url(); ?>/about/thought"><span>社長の生い立ちと想い</span></a></li>
           </ul>
         </div>
       </li>

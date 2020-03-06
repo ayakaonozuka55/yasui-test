@@ -277,7 +277,8 @@ $thumbnail_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'in
 				<!-- TENP -->
 				<?php include('side_voice.php'); ?>
       </div>
-    </article>
+		</article>
+		<?php include('tenp-excursion_bnr.php'); ?>
   </main>
 
 	<!-- TENP -->

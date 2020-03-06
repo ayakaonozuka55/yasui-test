@@ -90,7 +90,8 @@
           </ul>
           <!-- /.reasonList -->
         </div>
-      </section>
+			</section>
+			<?php include('tenp-excursion_bnr.php'); ?>
     </article>
   </main>
 

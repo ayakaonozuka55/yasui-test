@@ -5,7 +5,7 @@
 
 
 // アイキャッチ画像を有効にする。
-add_theme_support('post-thumbnails'); 
+add_theme_support('post-thumbnails');
 
 // カスタムメニュー有効
 register_nav_menus(array(
@@ -54,7 +54,7 @@ add_filter( 'show_admin_bar', '__return_false' );// 管理バーのHTMLを非表
 //ページネーション
 function pagination($pages = '', $range = 2)
 {
-    $showitems = ($range * 2)+1;  
+    $showitems = ($range * 2)+1;
 
     global $paged;
     if(empty($paged)) $paged = 1;
@@ -67,7 +67,7 @@ function pagination($pages = '', $range = 2)
         {
             $pages = 1;
         }
-    }   
+    }
 
     if(1 != $pages)
     {
@@ -83,7 +83,7 @@ function pagination($pages = '', $range = 2)
             }
         }
 
-        if ($paged < $pages && $showitems < $pages) echo "<li class='pager_next'><a href='".get_pagenum_link($paged + 1)."'><span>▶︎</span></a></li>";  
+        if ($paged < $pages && $showitems < $pages) echo "<li class='pager_next'><a href='".get_pagenum_link($paged + 1)."'><span>▶︎</span></a></li>";
 //        if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."' class='pager_number'>&raquo;</a>";
         echo "</ul>\n";
     }
@@ -98,7 +98,7 @@ function custom_post_menu_label() {
     $submenu['edit.php'][10][0] = '新しい新着情報';
 }
 add_action('init', 'custom_post_object_label');
- 
+
 function custom_post_object_label() {
 	global $wp_post_types;
 	$labels = &$wp_post_types['post']->labels;
@@ -713,7 +713,7 @@ add_action( 'pre_get_posts','my_search_filter' );
 
 
 
-// 投稿一覧にID追加 
+// 投稿一覧にID追加
 function add_posts_columns_postid($columns) {
   $columns['postid'] = 'ID';
   return $columns;
@@ -767,7 +767,7 @@ function adjust_date_title( $title, $sep, $seplocation ) {
 	$monthnum = get_query_var( 'monthnum' );
 	$day      = get_query_var( 'day' );
 	$date_title = '';
- 
+
 	// mパラメータがある場合 (パーマリンク設定がデフォルトの場合の日付アーカイブ)
 	if ( is_archive() && ! empty( $m ) ) {
 		$my_year  = substr( $m, 0, 4 );
@@ -793,7 +793,7 @@ function adjust_date_title( $title, $sep, $seplocation ) {
 			$title = " $sep " . $date_title;
 		}
 	}
-	
+
 	return $title;
 }
 add_filter( 'wp_title', 'adjust_date_title', 10, 3 );
@@ -803,19 +803,19 @@ add_filter( 'wp_title', 'adjust_date_title', 10, 3 );
 // ユーザー一覧に表示フィールドを追加する
 add_action('manage_users_columns','manage_users_columns');
 add_action('manage_users_custom_column','custom_manage_users_custom_column',10,3);
- 
+
 function manage_users_columns($column_headers) {
     $column_headers['orderno'] = '並び順';
     return $column_headers;
 }
- 
+
 function custom_manage_users_custom_column($custom_column,$column_name,$user_id) {
- 
+
     $user_info = get_userdata($user_id);
- 
+
     ${$column_name} = $user_info->$column_name;
     $custom_column = "\t".${$column_name}."\n";
- 
+
     return $custom_column;
 }
 
@@ -827,7 +827,7 @@ function custom_manage_users_custom_column($custom_column,$column_name,$user_id)
 // 寄稿者に画像アップ
 if ( current_user_can('contributor') && !current_user_can('upload_files') )
     add_action('admin_init', 'allow_contributor_uploads');
- 
+
   function allow_contributor_uploads() {
       $contributor = get_role('contributor');
       $contributor->add_cap('upload_files');
@@ -842,7 +842,7 @@ function mail_for_pending( $new_status, $old_status, $post ) {
 		$blogname = wp_specialchars_decode(get_option('blogname'), ENT_QUOTES);
 		// 投稿名
 		$post_title = wp_specialchars_decode($post->post_title, ENT_QUOTES);
-		
+
 		// 件名
 		$subject = "[{$blogname}] 承認待ちの投稿が投稿されました({$post_title})";
 		// 本文
@@ -850,7 +850,7 @@ function mail_for_pending( $new_status, $old_status, $post ) {
 		$message .= "\r\n";
 		$message .= "編集および公開: \r\n";
 		$message .= wp_specialchars_decode(get_edit_post_link( $post->ID ), ENT_QUOTES) . "\r\n";
-		
+
 		// 送信先(管理者メールアドレス)
 		$to = get_option('admin_email');
 		// メールを送信
@@ -880,6 +880,18 @@ function add_prev_post_link_class($output) {
 add_filter( 'next_post_link', 'add_next_post_link_class' );
 function add_next_post_link_class($output) {
   return str_replace('<a href=', '<a href=', $output);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+// [homeurl]・・・ページ内リンクの記述に利用
+// [tdir]・・・テーマファイル（親テーマ）内の画像を参照する時に利用
+add_shortcode('homeurl', 'shortcode_url');
+function shortcode_url() {
+	return get_bloginfo('url');
+}
+add_shortcode('tdir', 'tmp_dir');
+function tmp_dir() {
+	return get_template_directory_uri();
 }
 
 ?>

@@ -58,8 +58,9 @@
 						</a>
 					</article>
 				</div>
-      </section>
-    </article>
+				<?php include('tenp-excursion_bnr.php'); ?>
+			</section>
+		</article>
   </main>
 <!-- TENP -->
 <?php include('maincv.php'); ?>

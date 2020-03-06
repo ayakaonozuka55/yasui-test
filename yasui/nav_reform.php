@@ -11,6 +11,7 @@
     </div>
   </div>
 </section>
+<?php include('tenp-excursion_bnr.php'); ?>
 <article class="nav_pagefoot">
   <nav class="l-content-sm">
     <ul class="unordered">

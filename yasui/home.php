@@ -211,6 +211,7 @@ if(mb_strlen($post->post_title, 'UTF-8')>30){
         </article>
 		</div>
 		</article>
+		<?php include('tenp-excursion_bnr.php'); ?>
     <article class="top_showroom">
       <div class="l-content-sm cf">
         <div class="left">
