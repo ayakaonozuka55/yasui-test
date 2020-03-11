@@ -84,6 +84,7 @@
         <li class="listitem">
           <a href="<?php echo home_url(); ?>/about/">会社案内</a>
           <ul class="sub_unordered">
+						<li class="sub_listitem"><a href="<?php echo home_url(); ?>/about/thought/">社長の生い立ちと「家づくりへの想い」</a></li>
             <li class="sub_listitem"><a href="<?php echo home_url(); ?>/media/">受賞歴・メディア情報</a></li>
             <li class="sub_listitem"><a href="<?php echo home_url(); ?>/about/area/">対応エリア</a></li>
             <li class="sub_listitem"><a href="<?php echo home_url(); ?>/staff-auther-all/">スタッフ紹介一覧</a></li>

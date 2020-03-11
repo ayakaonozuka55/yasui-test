@@ -3088,7 +3088,7 @@ select:hover {
 	}
 
 	.top_news_area{
-		padding: 0 0 0;
+		padding: 0;
 	}
 
 
@@ -5465,6 +5465,17 @@ z-index: 300000!important;
 }
 
 @media only screen and (max-width: 1000px) {
+	.aboutnav li {
+    width: 18.5%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .aboutnav {
+    margin-top: 0;
+    padding: 10% 0 35%;
+  }
+
 	.aboutnav ul {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -11728,6 +11739,7 @@ z-index: 300000!important;
   padding-bottom: 100px;
 }
 .earthquakeresistance .haikei {
+	margin-bottom: 60px;
   padding: 60px;
 }
 
@@ -12152,6 +12164,7 @@ z-index: 300000!important;
 
 @media only screen and (max-width: 750px) {
   .earthquakeresistance .haikei {
+		margin-bottom: 5%;
     padding: 5%;
   }
 
@@ -15953,6 +15966,8 @@ justify-content: flex-end;
 }
 
 .section-info {
+	position: relative;
+	top: -10px;
   padding-bottom: 70px;
 }
 .showroom .maincv {
@@ -18560,23 +18575,23 @@ text-align: center;
    .reformLiving_article:last-child {
     padding-bottom: 40px;
   }
-  .reformWetarea_article .headwrapwrap,
-  .reformLiving_article .headwrapwrap {
+  .reformWetarea_article .headwrap,
+  .reformLiving_article .headwrap {
     display: block;
   }
-  .reformWetarea_article .headwrapwrap .content,
-  .reformLiving_article .headwrapwrap .content {
+  .reformWetarea_article .headwrap .content,
+  .reformLiving_article .headwrap .content {
     width: 100%;
     margin-bottom: 15px;
   }
-  .reformWetarea_article .headwrapwrap .heading,
-  .reformLiving_article .headwrapwrap .heading {
+  .reformWetarea_article .headwrap .heading,
+  .reformLiving_article .headwrap .heading {
     font-size: 18px;
     padding-left: 16px;
     padding-bottom: 14px;
     margin-bottom: 20px;
   }
-  .reformWetarea_article .headwrapwrap .heading::before,
+  .reformWetarea_article .headwrap .heading::before,
   .reformLiving_article .headwrap .heading::before {
     content: '';
     display: block;
@@ -19333,10 +19348,16 @@ text-align: center;
 .excursion_bnr_area{
 	padding: 50px 0;
 }
+.single_excursion_bnr_area .excursion_bnr_area {
+  padding: 0;
+}
 .excursion_bnr_inner{
 	max-width: 680px;
 	width: 90%;
 	margin: 0 auto;
+}
+.single_excursion_bnr_area .excursion_bnr_inner {
+  width: 100%;
 }
 .excursion_bnr_link{
 	display:block;

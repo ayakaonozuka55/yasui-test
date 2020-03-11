@@ -454,7 +454,7 @@ $image = get_field('画像','column_author_'.$staff_id);
                   <h2 class="head">人気のコラム</h2>
 <?php
     $args= array(
-    'tax_query' => array( 
+    'tax_query' => array(
       array(
 					'taxonomy' => 'column_category',
           'field' => 'slug',
@@ -531,8 +531,10 @@ if(mb_strlen($content, 'UTF-8')>28){
 <?php endwhile; ?>
                   </ul>
 <?php wp_reset_query();endif; ?>
-                </div>
-
+								</div>
+								<div class="single_excursion_bnr_area">
+								<?php include('tenp-excursion_bnr.php'); ?>
+								</div>
                 <div class="articleLikeBox cf">
 <?php
 $thumbnail_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'sns_size' );
